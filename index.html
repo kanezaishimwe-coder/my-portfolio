@@ -1,0 +1,391 @@
+<!DOCTYPE html
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Glory — Software Developer CV. Ishimwe Shema Kaneza Glory. HTML, CSS, JavaScript." />
+  <title>Glory | CV — Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER / NAVIGATION ========== -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">Glory<span class="logo-dot">.</span></a>
+
+      <!-- Mobile menu (CSS only — no JavaScript) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="mailto:kanezaishimwe@gmail.com">Contact</a></li>
+        </ul>
+        <a href="mailto:kanezaishimwe@gmail.com" class="btn btn-outline btn-small">Hire me</a>
+        <a href="mailto:kanezaishimwe@gmail.com" class="btn btn-primary btn-small">Let's talk</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="availability-banner">
+    <div class="availability-banner-inner">
+      <p class="availability-text">✨ I’m available now for new work, internships, and projects — let’s connect!</p>
+    </div>
+  </div>
+
+  <!-- Floating button — always visible on screen -->
+  <a href="mailto:kanezaishimwe@gmail.com" class="float-cta" aria-label="Email Glory">
+    ✉ Email me
+  </a>
+
+  <canvas id="wallpaper-canvas" aria-hidden="true"></canvas>
+
+  <main>
+
+
+    <!-- ========== HERO / CV INTRO ========== -->
+    <section id="hero" class="hero section">
+      <div class="hero-bg-shape"></div>
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+          <p class="badge badge-pulse">🟢 Open to work &amp; internships</p>
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-accent">Glory</span>
+          </h1>
+          <p class="hero-role">Software Developer</p>
+          <p class="hero-fullname">Ishimwe Shema Kaneza Glory</p>
+          <p class="hero-tagline">
+            I build clean, modern websites with <strong>HTML</strong>, <strong>CSS</strong>,
+            and <strong>JavaScript</strong>. This page is my live CV — hire me, collaborate,
+            or say hello!
+          </p>
+
+          <!-- Main call-to-action buttons -->
+          <div class="hero-actions">
+            <a href="mailto:kanezaishimwe@gmail.com" class="btn btn-primary">📩 Hire me now</a>
+            <a href="#projects" class="btn btn-outline">View projects</a>
+            <a href="#" class="btn btn-dark" onclick="window.print(); return false;">⬇ Download CV (PDF)</a>
+          </div>
+
+          <div class="hero-contact-row">
+            <a href="mailto:kanezaishimwe@gmail.com">kanezaishimwe@gmail.com</a>
+            <span class="dot">•</span>
+            <a href="https://github.com/kanezaishimwe-coder" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <span class="dot">•</span>
+          </div>
+        </div>
+
+        <!-- Profile photo: save your uploaded image to public/profile.png -->
+        <div class="hero-photo-wrap">
+          <div class="hero-photo">
+            <img src="public/profile.png" alt="Glory" class="hero-photo-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== STATS (impressive numbers) ========== -->
+    <section class="stats-bar">
+      <div class="container stats-grid">
+        <div class="stat-box">
+          <span class="stat-number">6+</span>
+          <span class="stat-label">Core skills</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">3+</span>
+          <span class="stat-label">Projects built</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Passion for code</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Ready to learn</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT / SUMMARY ========== -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">About me</h2>
+          <p class="section-subtitle">Professional summary</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text card">
+            <p>
+              I'm <strong>Ishimwe Shema Kaneza Glory</strong> — friends call me <strong>Glory</strong>.
+              I'm a motivated software developer who loves turning ideas into real websites
+              people can use and enjoy.
+            </p>
+            <p>
+              I specialize in front-end development: writing clean HTML, styling with CSS,
+              and adding interactivity with JavaScript. I care about responsive design,
+              readable code, and continuous learning.
+            </p>
+            <a href="mailto:kanezaishimwe@gmail.com" class="btn btn-primary">Work with me →</a>
+          </div>
+
+          <aside class="facts-card card">
+            <h3>Contact &amp; details</h3>
+            <dl>
+              <div>
+                <dt>Full name</dt>
+                <dd>Ishimwe Shema Kaneza Glory</dd>
+              </div>
+              <div>
+                <dt>Nickname</dt>
+                <dd>Glory</dd>
+              </div>
+              <div>
+                <dt>Role</dt>
+                <dd>Software Developer</dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:kanezaishimwe@gmail.com">kanezaishimwe@gmail.com</a></dd>
+              </div>
+              <div>
+                <dt>Status</dt>
+                <dd><span class="status-open">Open to opportunities</span></dd>
+              </div>
+            </dl>
+            <a href="mailto:kanezaishimwe@gmail.com" class="btn btn-outline btn-block">Send email</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA banner between sections -->
+    <div class="cta-banner">
+      <div class="container cta-banner-inner">
+        <p>Looking for a dedicated developer? <strong>Let's build something great.</strong></p>
+        <a href="mailto:kanezaishimwe@gmail.com" class="btn btn-white">Contact Glory</a>
+      </div>
+    </div>
+
+    <!-- ========== EXPERIENCE (CV timeline) ========== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Experience</h2>
+          <p class="section-subtitle">My journey so far</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item card">
+            <span class="timeline-date">2024 — Present</span>
+            <h3>Self-taught Software Developer</h3>
+            <p class="timeline-place">Personal projects &amp; learning</p>
+            <ul>
+              <li>Built responsive websites with HTML, CSS, and JavaScript</li>
+              <li>Created this portfolio / CV from scratch</li>
+              <li>Practiced Git, debugging, and clean code habits</li>
+            </ul>
+            <a href="#projects" class="link-arrow">See my projects →</a>
+          </article>
+
+          <article class="timeline-item card">
+            <span class="timeline-date">2023 — 2024</span>
+            <h3>Web Development Learner</h3>
+            <p class="timeline-place">Online courses &amp; tutorials</p>
+            <ul>
+              <li>Studied HTML semantics and CSS layouts (Flexbox &amp; Grid)</li>
+              <li>Learned JavaScript basics: variables, functions, DOM</li>
+              <li>Completed small practice projects and challenges</li>
+            </ul>
+          </article>
+
+          <!-- Edit this block with your real school / job -->
+          <article class="timeline-item card">
+            <span class="timeline-date">Your dates</span>
+            <h3>Education or first role</h3>
+            <p class="timeline-place">School / Company name</p>
+            <ul>
+              <li>Replace this with your real education or experience</li>
+              <li>Add grades, certificates, or achievements here</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="section-cta-center">
+          <a href="mailto:kanezaishimwe@gmail.com" class="btn btn-primary">Invite me to interview</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-subtitle">What I bring to your team</p>
+        </div>
+
+        <!-- Skill tags (easy to read at a glance) -->
+        <ul class="skill-pills">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Responsive Design</li>
+          <li>Git &amp; GitHub</li>
+          <li>UI / UX Basics</li>
+          <li>Problem Solving</li>
+          <li>Teamwork</li>
+        </ul>
+
+        <!-- Skill bars -->
+        <div class="skills-grid">
+          <article class="skill-card card">
+            <div class="skill-header"><span>HTML5</span><span class="skill-pct">90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+          </article>
+          <article class="skill-card card">
+            <div class="skill-header"><span>CSS3</span><span class="skill-pct">88%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
+          </article>
+          <article class="skill-card card">
+            <div class="skill-header"><span>JavaScript</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+          </article>
+          <article class="skill-card card">
+            <div class="skill-header"><span>Responsive Design</span><span class="skill-pct">88%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
+          </article>
+        </div>
+
+        <div class="section-cta-center">
+          <a href="mailto:kanezaishimwe@gmail.com" class="btn btn-outline">Need these skills? Contact me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== WHY HIRE ME ========== -->
+    <section class="section highlights-section">
+      <div class="container">
+        <div class="section-head section-head-center">
+          <h2 class="section-title">Why hire Glory?</h2>
+          <p class="section-subtitle">What makes me a great choice</p>
+        </div>
+        <div class="highlights-grid">
+          <article class="highlight-card card">
+            <span class="highlight-icon">⚡</span>
+            <h3>Fast learner</h3>
+            <p>I pick up new tools quickly and never stop improving my craft.</p>
+          </article>
+          <article class="highlight-card card">
+            <span class="highlight-icon">🎯</span>
+            <h3>Detail oriented</h3>
+            <p>Clean code, neat design, and pages that work on mobile and desktop.</p>
+          </article>
+          <article class="highlight-card card">
+            <span class="highlight-icon">🤝</span>
+            <h3>Team player</h3>
+            <p>Clear communication, reliable delivery, and a positive attitude.</p>
+          </article>
+          <article class="highlight-card card">
+            <span class="highlight-icon">💚</span>
+            <h3>Passionate</h3>
+            <p>I genuinely love building on the web — it shows in every project.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Proof of my work</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card card project-featured">
+            <span class="project-badge">⭐ Featured</span>
+            <h3>Personal CV Website</h3>
+            <p>
+              This live CV — built with pure HTML and CSS. Responsive, printable,
+              and designed with white, green, blue, and black branding.
+            </p>
+            <ul class="project-tags">
+              <li>HTML</li><li>CSS</li><li>CV Design</li>
+            </ul>
+            <div class="project-actions">
+              <a href="#hero" class="btn btn-primary btn-small">View live</a>
+              <a href="#" class="btn btn-outline btn-small">Source code</a>
+            </div>
+          </article>
+
+          <article class="project-card card">
+            <h3>Landing Page Project</h3>
+            <p>A modern landing page with hero, features, and contact section. Mobile-first layout.</p>
+            <ul class="project-tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="project-actions">
+              <a href="#" class="btn btn-primary btn-small">View project</a>
+            </div>
+          </article>
+
+          <article class="project-card card">
+            <h3>Practice App</h3>
+            <p>Interactive mini app — replace with your next real project description.</p>
+            <ul class="project-tags">
+              <li>HTML</li><li>CSS</li>
+            </ul>
+            <div class="project-actions">
+              <a href="#" class="btn btn-primary btn-small">View project</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-cta-center">
+          <a href="mailto:kanezaishimwe@gmail.com" class="btn btn-primary">Request a custom project</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="hire-cta section">
+      <div class="container hire-cta-inner card">
+        <h2>Ready to work together?</h2>
+        <p>I'm available for freelance, internships, and junior developer roles.</p>
+        <div class="hire-cta-buttons">
+          <a href="mailto:kanezaishimwe@gmail.com" class="btn btn-primary">📩 Email me today</a>
+          <a href="#" class="btn btn-outline" onclick="window.print(); return false;">Print / Save as PDF</a>
+          <a href="#projects" class="btn btn-outline">Browse projects</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-cta card">
+      <p class="footer-cta-text">Don't leave without saying hi! 👋</p>
+      <a href="mailto:kanezaishimwe@gmail.com" class="btn btn-primary">Hire Glory now</a>
+    </div>
+    <div class="container footer-inner">
+      <p>© 2026 Ishimwe Shema Kaneza Glory (Glory) — CV &amp; Portfolio</p>
+      <p class="footer-tech">Built with HTML &amp; CSS · White · Green · Blue · Black</p>
+    </div>
+  </footer>
+
+  <script type="module" src="src/wallpaper-init.js"></script>
+</body>
+</html>
