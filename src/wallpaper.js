@@ -29,6 +29,9 @@
   };
 
   const particles = [];
+  // Investor mode: slightly reduce intensity for smoother look on presentations.
+  const presentationMode = document.body?.dataset?.presentation === 'true';
+
 
   let lastT = 0;
   let rafId = 0;
